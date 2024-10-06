@@ -1,5 +1,7 @@
 # React + Vite
 
+To get started with this project run `npm run dev` in terminal.
+
 Madlibs
 
 This a game created with React, JavaScript and HTML which utilizes a form to display a story using the data inputted.
