@@ -7,13 +7,12 @@ function addCommas(num) {
     let integerPart = parts[0];
     let decimalPart = parts[1] || '';
 
-    // Add commas to the integer//
-    let newInteger = integerPart.replace(',');
 
-    //Combine new integer with decimal part//
-    let result = formattedInteger + (decimalPart ? '.' + decimalPart : '');
+  // Add commas to the integer part
+  let formattedInteger = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
-    return result
+  // Combine new integer with decimal part
+  let result = formattedInteger + (decimalPart ? '.' + decimalPart : '');
 
 
 }
